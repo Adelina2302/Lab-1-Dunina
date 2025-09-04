@@ -71,8 +71,7 @@ def lab2():
 st.set_page_config(page_title="Multi-Page Lab App")
 
 page = st.navigation([
+    st.Page(lab2, title="Lab 2"),  # 👉 ставим первой, теперь Lab 2 открывается по умолчанию
     st.Page(lab1, title="Lab 1"),
-    st.Page(lab2, title="Lab 2"),
-], default="Lab 2")  # 👉 Default = Lab 2
-
+])
 page.run()
